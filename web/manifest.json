@@ -1,0 +1,20 @@
+{
+  "name": "Asana Utils",
+  "description": "A collection of utilities for Asana",
+  "version": "0.0.1",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://app.asana.com/*/*/board"],
+      "js": ["contentscript.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "webNavigation",
+    "tabs"
+  ],
+  "manifest_version": 2
+}
